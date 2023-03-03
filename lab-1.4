@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+	int season = 0;
+	printf("enter the number of the season start from summer to spring(1-4)\n");
+
+	scanf_s("%d", &season); //вводим номер, соответствующий сезону
+	if (season == 1) //если введенный номер соответствует 1 (лето) 
+	{
+		printf("June\nJuly\nAugust\n"); //выводятся месяцы лета
+		return 0;
+	}
+
+	if (season == 2) //если введенный номер соответствует 2 (осень) 
+	{
+		printf("September\nOktober\nNovember\n"); //выводятся месяцы осени
+		return 0;
+	}
+
+	if (season == 3) //если введенный номер соответствует 3 (зима) 
+	{
+		printf("December\nJanuary\nFebruary\n"); //выводятся месяцы зимы
+		return 0;
+	}
+	if (season == 4) //если введенный номер соответствует 4 (весна) 
+	{
+		printf("March\nApril\nMay\n"); //выводятся месяцы весны
+		return 0;
+	}
+	return 0;
+}
