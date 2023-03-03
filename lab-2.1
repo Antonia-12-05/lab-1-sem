@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	int year, result;
+	double people, t; //t - утроенное число жителей
+	float a; // прирост населения
+
+	printf("Enter population\n");
+	scanf_s("%lf", &people);
+	t = 3 * people;
+	a = 1 / people;
+	for (year = 0; people <= t; year++)
+	{
+		people = people + a;
+		result = year;
+	}
+	printf("result %d years\n", result);
+	return 0;
+}
