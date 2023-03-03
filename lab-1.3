@@ -1,0 +1,38 @@
+#include <stdio.h> 
+
+int main()
+{
+	float a, b, c;
+
+	scanf_s("%f", &a); //вводим числа
+	scanf_s("%f", &b); //вводим числа
+	scanf_s("%f", &c); //вводим числа
+
+	if ((int)a != a) //если число a не является целым 
+	{
+		printf("not integer\n"); //выводим, что оно не целое
+	}
+	else
+	{
+		printf("integer\n"); //в случае, если число целое - выводим, что оно целое
+	}
+
+	if ((int)b != b) 
+	{
+		printf("not integer\n"); 
+	}
+	else
+	{
+		printf("integer\n"); 
+	}
+
+	if ((int)c != c) 
+	{
+		printf("not integer\n");
+	}
+	else
+	{
+		printf("integer\n"); 
+	}
+	return 0;
+}
