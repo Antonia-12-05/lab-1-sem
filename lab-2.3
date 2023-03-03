@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int Q = 0, n, P = 0, sum = 0;
+    printf("Enter Q & P \n Q= ");
+    scanf_s("%d", &Q); 
+    printf("\n P= ");
+    scanf_s("%d", &P);
+    while ((Q != 0) && (P != 0)) 
+    {
+        if (Q > P)
+            Q = Q % P;
+        else
+            P = P % Q;
+    }
+    sum = P + Q;
+    printf("GCD is %d", sum);
+}
